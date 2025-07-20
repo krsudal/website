@@ -2,30 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero" id="home">
-    <div class="overlay">
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#project">PROJECT</a></li>
-        </ul>
-        <ul class="lang-switch">
-          <li><button>KOR</button></li>
-          <li><button>ENG</button></li>
-          <li><button>JPN</button></li>
-        </ul>
-      </nav>
-      <div class="hero-text">
-        <h1>Creating Value with Data</h1>
-        <p>We build better solutions through AI and technology. Learn, Build, and Inspire.</p>
-      </div>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1 data-i18n="heroTitle">Create. Amaze. Inspire.</h1>
+      <p data-i18n="heroDesc">
+        Welcome to my portfolio showcasing projects and skills.
+      </p>
+    </div>
+    <div class="lang-switch">
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('ko')">KO</button>
+      <button onclick="setLang('ja')">JP</button>
     </div>
   </header>
+
+  <nav>
+    <a href="#home" data-i18n="navHome">HOME</a>
+    <a href="#about" data-i18n="navAbout">ABOUT</a>
+    <a href="#project" data-i18n="navProject">PROJECT</a>
+  </nav>
+
+  <section id="about"><h2>ABOUT</h2></section>
+  <section id="project"><h2>PROJECT</h2></section>
+
+  <script src="script.js"></script>
 </body>
 </html>
