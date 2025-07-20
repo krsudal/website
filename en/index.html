@@ -17,9 +17,6 @@
       background-position: center;
       height: 100vh;
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       color: white;
     }
     .overlay {
@@ -29,6 +26,10 @@
       height: 100%;
       top: 0;
       left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     nav {
       display: flex;
@@ -53,17 +54,8 @@
       cursor: pointer;
     }
     .hero-text {
-      position: relative;
       text-align: center;
       z-index: 2;
-    }
-    section {
-      padding: 100px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    section#about, section#project {
-      background-color: #f4f4f4;
     }
   </style>
 </head>
@@ -89,16 +81,7 @@
     </div>
   </header>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>This section will describe who you are, your background, and your interests.</p>
-  </section>
-
-  <section id="project">
-    <h2>Project</h2>
-    <p>This section will showcase the work you've done or are currently working on.</p>
-  </section>
-
   <script src="/script.js"></script>
 </body>
 </html>
+
