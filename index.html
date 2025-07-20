@@ -1,129 +1,21 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>김채영 | Data & AI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+  <meta http-equiv="refresh" content="0; url=/en" />
+  <title>Redirecting...</title>
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+    if (lang.startsWith('ko')) {
+      window.location.href = '/kr';
+    } else if (lang.startsWith('ja')) {
+      window.location.href = '/jp';
+    } else {
+      window.location.href = '/en';
     }
-
-    body, html {
-      font-family: 'Poppins', 'Noto Sans KR', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    .hero {
-      position: relative;
-      height: 100vh;
-      background: url('https://source.unsplash.com/1600x900/?ocean,tech') center/cover no-repeat;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(15, 23, 42, 0.5);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-      padding: 1rem;
-    }
-
-    .overlay h1 {
-      font-size: 3rem;
-      font-weight: 600;
-    }
-
-    .overlay p {
-      margin-top: 1rem;
-      font-size: 1.2rem;
-      max-width: 600px;
-    }
-
-    nav {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.2rem 2rem;
-      background: rgba(0, 0, 0, 0.3);
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 500;
-    }
-
-    .lang-switch {
-      margin-left: auto;
-    }
-
-    .lang-switch a {
-      margin-left: 1rem;
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #0f172a;
-    }
-
-    section p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #333;
-    }
-  </style>
+  </script>
 </head>
 <body>
-  <div class="hero">
-    <nav>
-      <div><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#project">PROJECT</a></div>
-      <div class="lang-switch">
-        <a href="/kr">KOR</a>
-        <a href="/en">ENG</a>
-        <a href="/jp">JPN</a>
-      </div>
-    </nav>
-    <div class="overlay" id="home">
-      <h1>데이터로 가치를 만듭니다</h1>
-      <p>AI와 기술을 통해 더 나은 솔루션을 만듭니다. Learn, Build, and Inspire.</p>
-    </div>
-  </div>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      안녕하세요! 저는 데이터 분석과 머신러닝, IT 솔루션 개발에 열정을 가진 개발자입니다.
-      다양한 프로젝트를 통해 문제를 해결하고, 기술을 통해 실질적인 가치를 만들어내는 것을 좋아합니다.
-    </p>
-  </section>
-
-  <section id="project">
-    <h2>Project</h2>
-    <p>
-      지금까지 진행한 주요 프로젝트들을 소개합니다. 머신러닝 기반 예측 시스템, IT 인프라 자동화, 개인화 추천 시스템 등 다양한 분야를 다루었습니다.
-    </p>
-  </section>
+  <p>Redirecting to your language...</p>
 </body>
 </html>
-
