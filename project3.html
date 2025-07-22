@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="index.html" data-i18n="navHome">HOME</a>
+    </div>
+    <div class="nav-right lang-switch">
+      <button onclick="setLang('ko')">KOR</button>
+      <button onclick="setLang('en')">ENG</button>
+      <button onclick="setLang('ja')">JPN</button>
+    </div>
+  </nav>
+
+  <section class="project-section">
+    <h2 data-i18n="projectsTitle">Projects</h2>
+
+    <div class="project-category" data-i18n="categoryITSolutions">IT Solutions</div>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/project7.jpg" alt="HACTREE image" />
+        <h3 data-i18n="project7_title">HACTREE: HS Code Auto Classification & Export Strategy Analyst</h3>
+        <p data-i18n="project7_desc">An AI-powered platform that classifies HS codes and generates trade reports for export enterprises.</p>
+        <span data-i18n="project7_tech">Tech: FastAPI, PyTorch, FAISS, LLM, Gradio</span><br/>
+        <a href="#">GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
