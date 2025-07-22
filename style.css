@@ -62,7 +62,7 @@ body, html {
 }
 /* Project Section */
 .project-section {
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -88,8 +88,9 @@ body, html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   max-width: 1100px;
+  padding: 20px;
   margin: 0 auto;
 }
 
@@ -100,7 +101,7 @@ body, html {
   text-align: center;
   padding: 0 0 20px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 0;
   box-shadow: none;
 }
 
