@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="projectsTitle">Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-left">
+      <a href="index.html" data-i18n="navHome">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="project.html" data-i18n="navProject">PROJECT</a>
+    </div>
+    <div class="nav-right lang-switch">
+      <button onclick="setLang('ko')">KOR</button>
+      <button onclick="setLang('en')">ENG</button>
+      <button onclick="setLang('ja')">JPN</button>
+    </div>
+  </nav>
+
+  <section class="category">
+    <h2 data-i18n="categoryData">Data Analysis Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/project1.png" alt="Project 1">
+        <h3 data-i18n="project1_title">Regional Private University Closure Risk Strategy</h3>
+        <p data-i18n="project1_desc">Developing data-driven strategic measures to respond to university closure risks.</p>
+        <div class="tech" data-i18n="project1_tech">Tech: Python, Pandas, Matplotlib</div>
+        <a href="#" class="more-btn">MORE</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/project2.png" alt="Project 2">
+        <h3 data-i18n="project2_title">Advertising Campaign Success Strategy</h3>
+        <p data-i18n="project2_desc">Predicting success of ad campaigns using machine learning classification models.</p>
+        <div class="tech" data-i18n="project2_tech">Tech: scikit-learn, XGBoost</div>
+        <a href="#" class="more-btn">MORE</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/project3.jpg" alt="Project 3">
+        <h3 data-i18n="project3_title">Automotive Recall Data: Analysis & Visualization</h3>
+        <p data-i18n="project3_desc">Analyzing defect data to identify vehicle recall trends and patterns.</p>
+        <div class="tech" data-i18n="project3_tech">Tech: Pandas, Seaborn, Plotly</div>
+        <a href="#" class="more-btn">MORE</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2 data-i18n="categoryML">Machine Learning & Deep Learning Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/project4.png" alt="Project 4">
+        <h3 data-i18n="project4_title">Power Plant NOx Emission Prediction Model</h3>
+        <p data-i18n="project4_desc">Predicting nitrogen oxide emissions using power and weather time-series data.</p>
+        <div class="tech" data-i18n="project4_tech">Tech: PyTorch, LSTM, Scikit-learn</div>
+        <a href="#" class="more-btn">MORE</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/project5.jpg" alt="Project 5">
+        <h3 data-i18n="project5_title">HealthSquare: Personalized AI Healthcare Coaching</h3>
+        <p data-i18n="project5_desc">Health recommendation platform with custom AI feedback based on user habits.</p>
+        <div class="tech" data-i18n="project5_tech">Tech: Streamlit, OpenAI API</div>
+        <a href="#" class="more-btn">MORE</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/project6.png" alt="Project 6">
+        <h3 data-i18n="project6_title">Startup Success Prediction Model</h3>
+        <p data-i18n="project6_desc">Forecasting the success of startups based on funding and industry data.</p>
+        <div class="tech" data-i18n="project6_tech">Tech: Python, LightGBM</div>
+        <a href="#" class="more-btn">MORE</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/project7.png" alt="Project 7">
+        <h3 data-i18n="project7_title">Credit Default Prediction Algorithm</h3>
+        <p data-i18n="project7_desc">Predicting loan default risk using customer financial and behavioral data.</p>
+        <div class="tech" data-i18n="project7_tech">Tech: TensorFlow, Keras</div>
+        <a href="#" class="more-btn">MORE</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2 data-i18n="categoryITSolutions">IT Solutions</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="assets/project8.png" alt="HACTREE">
+        <h3 data-i18n="project8_title">HACTREE: HS Code Auto Classification & Export Strategy Analyst</h3>
+        <p data-i18n="project8_desc">An AI-powered platform that classifies HS codes and generates trade reports for export enterprises.</p>
+        <div class="tech" data-i18n="project8_tech">Tech: FastAPI, PyTorch, FAISS, LLM, Gradio</div>
+        <a href="#" class="more-btn">MORE</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
