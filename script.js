@@ -17,7 +17,7 @@ const translations = {
     project2_tech: "Tech: Pandas, Seaborn, Plotly",
     project2_modal_desc: "",
     project3_title: "Automotive Recall Data: Analysis & Visualization",
-    project3_desc: "This project analyzes and visualizes automobile recall data provided by the Korea Transportation Safety Authority. Utilizing time-series analysis and Korean text mining techniques (including the Mecab morphological analyzer), the study effectively identifies key trends in the underlying causes of vehicle recalls.",
+    project3_desc: "This project analyzes and visualizes automobile recall data provided by the Korea Transportation Safety Authority. Utilizing time-series analysis and Korean text mining techniques, the study effectively identifies key trends in the underlying causes of vehicle recalls.",
     project3_tech: "Tech: Python, Seaborn, KoNLPy, Mecab, Twitter, re, WordCloud",
     project3_modal_desc: `
       <div class="modal-section">
@@ -136,7 +136,7 @@ const translations = {
     project2_desc: "成功確率を推定する分類モデルを構築",
     project2_tech: "技術: scikit-learn, XGBoost",
     project3_title: "自動車リコール欠陥データ分析と可視化",
-    project3_desc: "本プロジェクトでは、韓国交通安全公団が提供する自動車リコールデータをもとに、欠陥原因の分析および可視化を行いました。時系列分析と韓国語テキストマイニング（Mecab形態素解析器を使用）を組み合わせることで、リコール原因のトレンドを効果的に抽出しました。",
+    project3_desc: "本プロジェクトでは、韓国交通安全公団が提供する自動車リコールデータをもとに、欠陥原因の分析および可視化を行いました。時系列分析と韓国語テキストマイニングを組み合わせることで、リコール原因のトレンドを効果的に抽出しました。",
     project3_tech: "技術: Python, Seaborn, KoNLPy, Mecab, Twitter, re, WordCloud",
     project3_modal_desc: `
       <div class="modal-section">
