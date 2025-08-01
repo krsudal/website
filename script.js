@@ -199,6 +199,7 @@ document.querySelectorAll('.more-btn').forEach((btn, index) => {
 function openModal(index) {
   const modal = document.getElementById('modal');
   const modalContent = document.querySelector('.modal-content-inner');
+  const lang = document.documentElement.lang || 'en'; // 현재 언어 감지
 
   // 예시용 상세 설명 (인덱스에 따라 다르게 출력 가능)
   const details = [
@@ -247,12 +248,16 @@ function openModal(index) {
 
   const data = details[index] || { title: 'Project', desc: 'Details not available', image: '' };
 
+  const isHTML = data.desc && data.desc.trim().startsWith('<');
+  const descriptionHTML = isHTML ? data.desc : `<p>${data.desc}</p>`;
+
   modalContent.innerHTML = `
     <span class="close" onclick="closeModal()">&times;</span>
     <h3>${data.title}</h3>
-    <p>${data.desc}</p>
-    ${data.image ? `<img src="${data.image}" alt="${data.title}" />` : ''}
+    ${descriptionHTML}
+    ${data.image ? `<img src="${data.image}" alt="${data.title}" style="width:100%; margin-top: 15px;" />` : ''}
   `;
+
   modal.style.display = 'block';
 }
 
