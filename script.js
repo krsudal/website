@@ -11,27 +11,57 @@ const translations = {
     project1_title: "Regional Private University Closure Risk Strategy",
     project1_desc: "Predicting closure risk and providing strategic insights using education data.",
     project1_tech: "Tech: Python, Pandas, Matplotlib",
+    project1_modal_desc: "This project uses enrollment statistics and regional economic indicators to build a predictive model for assessing closure risk of regional private universities. Strategic recommendations are offered for sustainability.",
     project2_title: "Advertising Campaign Success Strategy",
     project2_desc: "Analysis of defect frequency and visualization of time series recall trends",
     project2_tech: "Tech: Pandas, Seaborn, Plotly",
+    project2_modal_desc: "",
     project3_title: "Automotive Recall Data: Analysis & Visualization",
     project3_desc: "This project analyzes and visualizes automobile recall data provided by the Korea Transportation Safety Authority. Utilizing time-series analysis and Korean text mining techniques (including the Mecab morphological analyzer), the study effectively identifies key trends in the underlying causes of vehicle recalls.",
     project3_tech: "Tech: Python, Seaborn, KoNLPy, Mecab, Twitter, re, WordCloud",
+    project3_modal_desc: `
+      <div class="modal-section">
+        <strong>Objective</strong>
+        <ul>
+          <li>Predict closure risks using regional education and economic data.</li>
+          <li>Provide actionable strategies for struggling universities.</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <strong>Approach</strong>
+        <ul>
+          <li>Collected data from MOE and regional economic datasets.</li>
+          <li>Built predictive model using logistic regression and LightGBM.</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <strong>Outcome</strong>
+        <ul>
+          <li>Identified high-risk universities with over 85% accuracy.</li>
+          <li>Proposed tailored intervention plans for policymakers.</li>
+        </ul>
+      </div>
+    `,
     project4_title: "Power Plant NOx Emission Prediction Model Using Power Demand and Weather Data",
     project4_desc: "Used venture stage and industry features to predict startup outcomes.",
     project4_tech: "Tech: Python, LightGBM",
+    project4_modal_desc: "",
     project5_title: "HealthSquare: Personalized AI Healthcare Coaching",
     project5_desc: "Developed a model using credit scoring data to detect default risk.",
     project5_tech: "Tech: TensorFlow, Keras",
+    project5_modal_desc: "",
     project6_title: "Startup Success Prediction using Investment Data",
     project6_desc: "Personalized health coaching based on user wellness history and preferences.",
     project6_tech: "Tech: Streamlit, OpenAI API",
+    project6_modal_desc: "",
     project7_title: "Credit Default Prediction Algorithm",
     project7_desc: "Not Defined",
     project7_tech: "Tech: ",
+    project7_modal_desc: "",
     project8_title: "HACTREE: HS Code Auto Classification & Export Strategy Analyst",
     project8_desc: "An AI-powered platform that classifies HS codes and generates trade reports for export enterprises.",
-    project8_tech: "Tech: FastAPI, PyTorch, FAISS, LLM, Gradio"
+    project8_tech: "Tech: FastAPI, PyTorch, FAISS, LLM, Gradio",
+    project8_modal_desc: ""
   },
   ko: {
     heroTitle: "데이터로 가치를 창출합니다",
@@ -51,6 +81,29 @@ const translations = {
     project3_title: "자동차 결함 리콜 데이터 분석 및 시각화",
     project3_desc: "본 프로젝트는 한국교통안전공단의 자동차 리콜 데이터를 바탕으로 결함 사유 분석과 시각화를 수행하였으며, 시계열 분석 및 한국어 텍스트 마이닝(Mecab)을 통해 리콜 원인의 트렌드를 효과적으로 도출했습니다.",
     project3_tech: "기술: Python, Seaborn, KoNLPy, Mecab, Twitter, re, WordCloud",
+    project3_modal_desc: `
+      <div class="modal-section">
+        <strong>목표</strong>
+        <ul>
+          <li>지역 교육 및 경제 데이터를 활용해 대학 폐교 위험 예측</li>
+          <li>위기 대학을 위한 맞춤형 대응 전략 제시</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <strong>접근 방식</strong>
+        <ul>
+          <li>교육부 및 지역경제 데이터를 수집</li>
+          <li>로지스틱 회귀 및 LightGBM 기반 예측 모델 구축</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <strong>성과</strong>
+        <ul>
+          <li>85% 이상의 정확도로 고위험 대학 식별</li>
+          <li>정책 수립을 위한 구체적 개입 방안 도출</li>
+        </ul>
+      </div>
+    `,
     project4_title: "전력 수요 및 기상 데이터를 활용한 발전소 질소산화물(NOx) 배출량 예측 모델",
     project4_desc: "한국전력거래소와 한국남동발전소 공공데이터를 활용한 기상정보와 TMS측정 데이터를 활용한 예측 모델",
     project4_tech: "기술: Python, LightGBM",
@@ -85,6 +138,29 @@ const translations = {
     project3_title: "自動車リコール欠陥データ分析と可視化",
     project3_desc: "本プロジェクトでは、韓国交通安全公団が提供する自動車リコールデータをもとに、欠陥原因の分析および可視化を行いました。時系列分析と韓国語テキストマイニング（Mecab形態素解析器を使用）を組み合わせることで、リコール原因のトレンドを効果的に抽出しました。",
     project3_tech: "技術: Python, Seaborn, KoNLPy, Mecab, Twitter, re, WordCloud",
+    project3_modal_desc: `
+      <div class="modal-section">
+        <strong>목표</strong>
+        <ul>
+          <li>지역 교육 및 경제 데이터를 활용해 대학 폐교 위험 예측</li>
+          <li>위기 대학을 위한 맞춤형 대응 전략 제시</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <strong>접근 방식</strong>
+        <ul>
+          <li>교육부 및 지역경제 데이터를 수집</li>
+          <li>로지스틱 회귀 및 LightGBM 기반 예측 모델 구축</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <strong>성과</strong>
+        <ul>
+          <li>85% 이상의 정확도로 고위험 대학 식별</li>
+          <li>정책 수립을 위한 구체적 개입 방안 도출</li>
+        </ul>
+      </div>
+    `,
     project4_title: "電力需要·気象データを活用した発電所窒素酸化物(NOx)排出量予測モデル",
     project4_desc: "つづく",
     project4_tech: "技術: Python, LightGBM",
@@ -138,7 +214,7 @@ function openModal(index) {
     },
     {
       title: translations['en']['project3_title'],
-      desc: translations['en']['project3_desc'],
+      desc: translations['en']['project3_modal_desc'],
       image: 'assets/project3.jpg'
     },
     {
