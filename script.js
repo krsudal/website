@@ -141,6 +141,31 @@ function openModal(index) {
       desc: translations['en']['project3_desc'],
       image: 'assets/project3.jpg'
     },
+    {
+      title: translations['en']['project4_title'],
+      desc: translations['en']['project4_desc'],
+      image: 'assets/project4.png'
+    },
+    {
+      title: translations['en']['project5_title'],
+      desc: translations['en']['project5_desc'],
+      image: 'assets/project5.jpg'
+    },
+    {
+      title: translations['en']['project6_title'],
+      desc: translations['en']['project6_desc'],
+      image: 'assets/project6.png'
+    },
+    {
+      title: translations['en']['project7_title'],
+      desc: translations['en']['project7_desc'],
+      image: 'assets/project7.png'
+    },
+    {
+      title: translations['en']['project8_title'],
+      desc: translations['en']['project8_desc'],
+      image: 'assets/project8.png'
+    },
     // ...계속 추가
   ];
 
