@@ -23,22 +23,40 @@ const translations = {
       <div class="modal-section">
         <strong>Objective</strong>
         <ul>
-          <li>Predict closure risks using regional education and economic data.</li>
-          <li>Provide actionable strategies for struggling universities.</li>
+          <li>To visually explore the causes and patterns of automobile defects using the 2020 recall dataset from the Korea Transportation Safety Authority</li>
+          <li>To design the analysis framework with scalability in mind, enabling future collaboration with insurance companies and repair shops, as well as specialized analysis for electric and autonomous vehicles</li>
         </ul>
       </div>
       <div class="modal-section">
-        <strong>Approach</strong>
+        <strong>Dataset and Key Variables</strong>
         <ul>
-          <li>Collected data from MOE and regional economic datasets.</li>
-          <li>Built predictive model using logistic regression and LightGBM.</li>
+          <li>Source: Public Automobile Recall Dataset (Ministry of Land, Infrastructure and Transport, Korea)</li>
+          <li>Key columns: Manufacturer, Model Name, Recall Start Date, Defect Description</li>
         </ul>
       </div>
       <div class="modal-section">
-        <strong>Outcome</strong>
+        <strong>Methodology</strong>
         <ul>
-          <li>Identified high-risk universities with over 85% accuracy.</li>
-          <li>Proposed tailored intervention plans for policymakers.</li>
+          <li>Parsed time-series data and conducted monthly frequency analysis</li>
+          <li>Applied morphological analysis using KoNLPy tools (Mecab and Twitter) to extract nouns from defect descriptions</li>
+          <li>Removed stopwords and performed frequency analysis, followed by word cloud visualization</li>
+          <li>Explored structural categorization potential in defect texts to inform future modeling efforts</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <strong>Key Tasks</strong>
+        <ul>
+          <li>Analyzed recall trends based on time-series data</li>
+          <li>Parsed the 'Recall Start Date' column into year/month/day and calculated monthly recall counts</li>
+          <li>Used value_counts() and sort_index() to identify months with the highest and lowest recall occurrences</li>
+          <li>Provided strategic insights into quality control through interpretation of seasonal and item-specific recall trends</li>
+          <li>Conducted textual analysis on recall reasons</li>
+          <li>Preprocessed defect description texts using regular expressions for noise removal</li>
+          <li>Switched from Twitter() to Mecab() for improved noun extraction accuracy</li>
+          <li>Applied a stopword list and filtered out single-character words to isolate meaningful keywords</li>
+          <li>Visualized results using collections.Counter and WordCloud to enhance insight communication</li>
+          <li>Tracked recall cases for Kia Motors</li>
+          <li>Filtered by manufacturer and sorted by recall start date to identify the most recent recalled model</li>
         </ul>
       </div>
     `,
@@ -83,24 +101,42 @@ const translations = {
     project3_tech: "기술: Python, Seaborn, KoNLPy, Mecab, Twitter, re, WordCloud",
     project3_modal_desc: `
       <div class="modal-section">
-        <strong>목표</strong>
+        <strong>프로젝트 목표</strong>
         <ul>
-          <li>지역 교육 및 경제 데이터를 활용해 대학 폐교 위험 예측</li>
-          <li>위기 대학을 위한 맞춤형 대응 전략 제시</li>
+          <li>2020년 한국교통안전공단 자동차 리콜 데이터를 활용해 결함의 원인과 패턴을 시각적으로 분석</li>
+          <li>추후 보험사/정비업체 데이터 협업, 전기차/자율주행 특화 결함 분석을 고려한 확장성 설계</li>
         </ul>
       </div>
       <div class="modal-section">
-        <strong>접근 방식</strong>
+        <strong>데이터셋</strong>
         <ul>
-          <li>교육부 및 지역경제 데이터를 수집</li>
-          <li>로지스틱 회귀 및 LightGBM 기반 예측 모델 구축</li>
+          <li>자동차 리콜 공공데이터 (국토교통부)</li>
+          <li>주요 열: 제작자, 차명, 리콜개시일, 결함내용</li>
         </ul>
       </div>
       <div class="modal-section">
-        <strong>성과</strong>
+        <strong>데이터 분석 방법</strong>
         <ul>
-          <li>85% 이상의 정확도로 고위험 대학 식별</li>
-          <li>정책 수립을 위한 구체적 개입 방안 도출</li>
+          <li>시계열 데이터 파싱 및 월별 빈도 분석</li>
+          <li>KoNLPy 기반 형태소 분석기(Mecab, Twitter)를 활용한 명사 추출</li>
+          <li>불용어 제거 후 텍스트 빈도 분석 및 워드클라우드 시각화</li>
+          <li>결함 텍스트의 구조적 분류 가능성 탐색 및 추후 모델링 고려</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <strong>주요 작업</strong>
+        <ul>
+          <li>시계열 기반 리콜 추이 분석</li>
+          <li>리콜개시일 컬럼을 연/월/일로 파싱하여 월별 리콜 건수 집계</li>
+          <li>value_counts() 및 sort_index()를 통해 리콜이 가장 많이 발생한 달과 가장 적은 달 비교</li>
+          <li>계절성 및 품목별 리콜 트렌드 해석을 통해 품질 관리 전략 수립 근거 제공</li>
+          <li>텍스트 기반 리콜 사유 분석</li>
+          <li>결함내용 컬럼에 대한 정규표현식 기반 전처리 및 텍스트 정제</li>
+          <li>KoNLPy의 Twitter() 실패 후 Mecab()로 전환하여 명사 추출 정확도 확보</li>
+          <li>불용어 리스트 적용 및 1글자 이하 단어 제거 → 의미 있는 핵심 키워드 필터링</li>
+          <li>collections.Counter + WordCloud로 시각화하여 인사이트 전달력 강화</li>
+          <li>기아자동차 리콜 사례 추적</li>
+          <li>제작자 기준 필터링 + 리콜개시일 기준 정렬로 가장 최근 리콜 모델명 도출</li>
         </ul>
       </div>
     `,
@@ -140,24 +176,42 @@ const translations = {
     project3_tech: "技術: Python, Seaborn, KoNLPy, Mecab, Twitter, re, WordCloud",
     project3_modal_desc: `
       <div class="modal-section">
-        <strong>목표</strong>
+        <strong>目的</strong>
         <ul>
-          <li>지역 교육 및 경제 데이터를 활용해 대학 폐교 위험 예측</li>
-          <li>위기 대학을 위한 맞춤형 대응 전략 제시</li>
+          <li>2020年の韓国交通安全公団リコールデータを用いて、自動車の欠陥原因およびパターンを視覚的に分析すること</li>
+          <li>将来的な保険会社・整備業者とのデータ連携、また電気自動車や自動運転車両向けの特化型分析に対応できる拡張性を意識した設計</li>
         </ul>
       </div>
       <div class="modal-section">
-        <strong>접근 방식</strong>
+        <strong>データセットおよび主な変数</strong>
         <ul>
-          <li>교육부 및 지역경제 데이터를 수집</li>
-          <li>로지스틱 회귀 및 LightGBM 기반 예측 모델 구축</li>
+          <li>ソース：自動車リコール公共データ（韓国 国土交通部）</li>
+          <li>主な列：製造者、車種名、リコール開始日、欠陥内容</li>
         </ul>
       </div>
       <div class="modal-section">
-        <strong>성과</strong>
+        <strong>分析手法</strong>
         <ul>
-          <li>85% 이상의 정확도로 고위험 대학 식별</li>
-          <li>정책 수립을 위한 구체적 개입 방안 도출</li>
+          <li>時系列データのパースおよび月別頻度の分析</li>
+          <li>KoNLPyのMecabおよびTwitter形態素解析器を用いた名詞抽出</li>
+          <li>ストップワードの除去後、テキスト頻度分析とワードクラウドによる可視化</li>
+          <li>欠陥内容の構造的分類の可能性を検討し、将来的なモデリングを視野に入れた分析</li>
+        </ul>
+      </div>
+      <div class="modal-section">
+        <strong>主な作業内容</strong>
+        <ul>
+          <li>時系列データに基づくリコール傾向の分析</li>
+          <li>「リコール開始日」列を年/月/日に分解し、月別リコール件数を集計</li>
+          <li>value_counts()およびsort_index()により、リコールが最も多かった月と少なかった月を比較</li>
+          <li>季節性および品目別リコール傾向の解釈を通じて、品質管理戦略への示唆を提供</li>
+          <li>テキストに基づくリコール理由の分析</li>
+          <li>欠陥内容に正規表現を適用し、前処理とテキストクレンジングを実施</li>
+          <li>Twitter()からMecab()へ切り替え、名詞抽出の精度を向上</li>
+          <li>ストップワードの適用と1文字以下の語の除去により、意味のあるキーワードを抽出</li>
+          <li>collections.CounterとWordCloudを用いた可視化で、洞察の伝達力を向上</li>
+          <li>起亜自動車のリコール事例の追跡</li>
+          <li>製造者でフィルタリングし、リコール開始日順に並べて最新モデル名を抽出</li>
         </ul>
       </div>
     `,
