@@ -112,3 +112,56 @@ function setLang(lang) {
     }
   });
 }
+// --- 모달 기능 시작 ---
+
+// 열기 버튼마다 이벤트 연결
+document.querySelectorAll('.more-btn').forEach((btn, index) => {
+  btn.addEventListener('click', () => openModal(index));
+});
+
+// 모달 열기
+function openModal(index) {
+  const modal = document.getElementById('modal');
+  const modalContent = document.querySelector('.modal-content-inner');
+
+  // 예시용 상세 설명 (인덱스에 따라 다르게 출력 가능)
+  const details = [
+    {
+      title: translations['en']['project1_title'],
+      desc: translations['en']['project1_desc'],
+      image: 'assets/project1.png'
+    },
+    {
+      title: translations['en']['project2_title'],
+      desc: translations['en']['project2_desc'],
+      image: 'assets/project2.png'
+    },
+    {
+      title: translations['en']['project3_title'],
+      desc: translations['en']['project3_desc'],
+      image: 'assets/project3.jpg'
+    },
+    // ...계속 추가
+  ];
+
+  const data = details[index] || { title: 'Project', desc: 'Details not available', image: '' };
+
+  modalContent.innerHTML = `
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3>${data.title}</h3>
+    <p>${data.desc}</p>
+    ${data.image ? `<img src="${data.image}" alt="${data.title}" />` : ''}
+  `;
+  modal.style.display = 'block';
+}
+
+// 모달 닫기
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
+
+// ESC 키로 닫기
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal();
+});
