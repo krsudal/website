@@ -182,6 +182,30 @@ body, html {
   cursor: pointer;
 }
 
+.modal-section {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.modal-section strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.modal-section ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.modal-section ul li {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 4px;
+}
+
 .close:hover {
   color: #000;
 }
