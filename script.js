@@ -72,14 +72,10 @@ const translations = {
     project6_desc: "Personalized health coaching based on user wellness history and preferences.",
     project6_tech: "Tech: Streamlit, OpenAI API",
     project6_modal_desc: "",
-    project7_title: "Credit Default Prediction Algorithm",
-    project7_desc: "Not Defined",
-    project7_tech: "Tech: ",
-    project7_modal_desc: "",
-    project8_title: "HACTREE: HS Code Auto Classification & Export Strategy Analyst",
-    project8_desc: "An AI-powered platform that classifies HS codes and generates trade reports for export enterprises.",
-    project8_tech: "Tech: FastAPI, PyTorch, FAISS, LLM, Gradio",
-    project8_modal_desc: ""
+    project7_title: "HACTREE: HS Code Auto Classification & Export Strategy Analyst",
+    project7_desc: "An AI-powered platform that classifies HS codes and generates trade reports for export enterprises.",
+    project7_tech: "Tech: FastAPI, PyTorch, FAISS, LLM, Gradio",
+    project7_modal_desc: ""
   },
   ko: {
     heroTitle: "데이터로 가치를 창출합니다",
@@ -149,12 +145,9 @@ const translations = {
     project6_title: "스타트업 성공 여부 예측 모델",
     project6_desc: "스타트업의 다양한 창업 및 투자 데이터를 기반으로 성공 여부를 예측",
     project6_tech: "기술: Streamlit, OpenAI API",
-    project7_title: "채무 불이행 여부 예측 알고리즘 구축",
-    project7_desc: "Not Defined",
-    project7_tech: "기술: ",
-    project8_title: "HACTREE: HS코드 자동 분류 및 수출 전략 분석 플랫폼",
-    project8_desc: "HS코드 분류와 수출 전략 보고서를 자동 생성하는 AI 플랫폼",
-    project8_tech: "기술: FastAPI, PyTorch, FAISS, LLM, Gradio"
+    project7_title: "HACTREE: HS코드 자동 분류 및 수출 전략 분석 플랫폼",
+    project7_desc: "HS코드 분류와 수출 전략 보고서를 자동 생성하는 AI 플랫폼",
+    project7_tech: "기술: FastAPI, PyTorch, FAISS, LLM, Gradio"
   },
   ja: {
     heroTitle: "データで価値を創造する",
@@ -224,12 +217,9 @@ const translations = {
     project6_title: "スタートアップ成功予測",
     project6_desc: "投資段階と業種に基づいて成功を予測",
     project6_tech: "技術: Streamlit, OpenAI API",
-    project7_title: "信用不履行予測アルゴリズム",
-    project7_desc: "信用スコアデータを用いた分類モデル",
-    project7_tech: "技術: TensorFlow, Keras",
-    project8_title: "HACTREE：HSコード分類と輸出インテリジェンス分析AI",
-    project8_desc: "HSコードの分類と貿易戦略レポートを自動生成するAIシステム",
-    project8_tech: "技術: FastAPI, PyTorch, FAISS, LLM, Gradio"
+    project7_title: "HACTREE：HSコード分類と輸出インテリジェンス分析AI",
+    project7_desc: "HSコードの分類と貿易戦略レポートを自動生成するAIシステム",
+    project7_tech: "技術: FastAPI, PyTorch, FAISS, LLM, Gradio"
   }
 };
 
@@ -290,11 +280,6 @@ function openModal(index) {
     {
       title: translations['en']['project7_title'],
       desc: translations['en']['project7_desc'],
-      image: 'assets/project7.png'
-    },
-    {
-      title: translations['en']['project8_title'],
-      desc: translations['en']['project8_desc'],
       image: 'assets/project8.png'
     },
     // ...계속 추가
